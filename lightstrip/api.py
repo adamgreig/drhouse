@@ -9,9 +9,9 @@ lightstrip = LightstripControl("/dev/ttyACM0", 115200)
 def set():
     """Set the lightstrip colour. Each component is 0 to 100."""
     red = int(request.form["red"])
-    blue = int(request.form["blue"])
     green = int(request.form["green"])
-    lightstrip.set_colour(red, blue, green)
+    blue = int(request.form["blue"])
+    lightstrip.set_colour(red, green, blue)
     return "OK"
 
 
