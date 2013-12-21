@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<form id="colour">
+r <input type=range value=0 name=red><br>
+g <input type=range value=0 name=green><br>
+b <input type=range value=0 name=blue><br>
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.6.3/coffee-script.min.js"></script>
+<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/coffeescript">
+  $.post "/set", $("#colour").serialize()
+  $("#colour").bind 'change', (event, data) ->
+    $.post "/set", $(@).serialize()
+</script>
