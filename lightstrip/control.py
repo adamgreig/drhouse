@@ -1,8 +1,9 @@
 import serial
 import struct
 
-
-white = (183, 255, 137)
+c_r = [0.43418846, 0.06470259, 0.0]
+c_g = [0.2834586, 0.84048772, 0.0]
+c_b = [0.0, 0.09480969, 0.5372549]
 
 
 class LightstripControl:
@@ -14,10 +15,10 @@ class LightstripControl:
 
     def set_colour(self, red, green, blue):
         """Set the RGB colour, each component 0 to 255"""
-        red = int(red * white[0]/255.0)
-        green = int(green * white[1]/255.0)
-        blue = int(blue * white[2]/255.0)
-        self.ser.write(struct.pack("BBBB", 0xFF, red, green, blue))
+        r = c_r[0] * red + c_r[1] * green + c_r[2] * blue
+        g = c_g[0] * red + c_g[1] * green + c_g[2] * blue
+        b = c_b[0] * red + c_b[1] * green + c_b[2] * blue
+        self.ser.write(struct.pack("BBBB", 0xFF, r, g, b))
 
     def __del__(self):
         self.ser.close()
