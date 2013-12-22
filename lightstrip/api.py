@@ -7,7 +7,7 @@ lightstrip = LightstripControl("/dev/ttyACM0", 115200)
 
 @app.route("/set", methods=["POST"])
 def set():
-    """Set the lightstrip colour. Each component is 0 to 100."""
+    """Set the lightstrip colour. Each component is 0 to 255."""
     red = int(request.form["red"])
     green = int(request.form["green"])
     blue = int(request.form["blue"])

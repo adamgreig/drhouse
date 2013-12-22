@@ -10,10 +10,10 @@ class LightstripControl:
         self.ser = serial.Serial(port, baud)
 
     def set_colour(self, red, green, blue):
-        """Set the RGB colour, each component 0 to 100"""
-        red = int(red * 2.54)
-        green = int(green * 2.54)
-        blue = int(blue * 2.54)
+        """Set the RGB colour, each component 0 to 255"""
+        red = int(red)
+        green = int(green)
+        blue = int(blue)
         self.ser.write(struct.pack("BBBB", 0xFF, red, green, blue))
 
     def __del__(self):
