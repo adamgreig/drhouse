@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrHouse Lightstrip</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">RGB Sliders</string>
+    <string name="title_section2">Palette</string>
+    <string name="R">R</string>
+    <string name="G">G</string>
+    <string name="B">B</string>
+
+</resources>
