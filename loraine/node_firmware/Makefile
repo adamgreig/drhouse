@@ -16,7 +16,7 @@ elf: $(SRCS:=.o)
 	avr-gcc -Wall -mmcu=$(MMCPU) -DF_CPU=$(F_CPU) -Os -std=gnu99 -o $(TARGET).elf $(SRCS:=.o)
  
 .c.o:
-	avr-gcc -Wall -mmcu=$(MMCPU) -DF_CPU=$(F_CPU) -Os -funroll-loops -std=gnu99 -c $<
+	avr-gcc -Wall -mmcu=$(MMCPU) -DF_CPU=$(F_CPU) -Os -std=gnu99 -c $<
 
 fuses:
 	avrdude -p $(MMCPU) -c $(PROG) -U lfuse:w:0xef:m -U hfuse:w:0x9f:m -U efuse:w:0xff:m

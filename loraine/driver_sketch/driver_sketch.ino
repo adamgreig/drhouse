@@ -21,12 +21,12 @@ void loop() {
   if(Serial.read() == 0x03) {
     while(!(UCSR1A & (1<<5)));
     
-    UCSR1B &= ~(1<<0);
+    UCSR1B |= (1<<0);
     UDR1 = addr;
     
     while(!(UCSR1A & (1<<5)));
     
-    UCSR1B |= (1<<0);
+    UCSR1B &= ~(1<<0);
     UDR1 = data;
   }
 }
