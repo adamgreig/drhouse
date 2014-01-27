@@ -1,0 +1,44 @@
+lights:
+    bookshelf:
+        one:
+            red: 0x0A
+            green: 0x0B
+            blue: 0x0C
+        two:
+            red: 0x0D
+            green: 0x0E
+            blue: 0x0F
+        three:
+            red: 0x12
+            green: 0x13
+            blue: 0x14
+        four:
+            red: 0x15
+            green: 0x16
+            blue: 0x17
+        five:
+            red: 0x1A
+            green: 0x1B
+            blue: 0x1C
+        six:
+            red: 0x1D
+            green: 0x1E
+            blue: 0x1F
+
+    fairylights:
+        back:
+            gray: 0x20
+        middle:
+            gray: 0x21
+        front:
+            gray: 0x30
+
+    cabinet:
+        rear:
+            red: 0x32
+            green: 0x33
+            blue: 0x34
+        turntable:
+            red: 0x35
+            green: 0x36
+            blue: 0x37
