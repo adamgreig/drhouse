@@ -6,7 +6,7 @@ import socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 red = "255,0,0"
-orange = "255,165,0"
+orange = "255,80,0"
 green = "0,255,0"
 off = "0,0,0"
 
