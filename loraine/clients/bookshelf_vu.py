@@ -54,4 +54,4 @@ def move_to_level(current, new, delay):
 
 level = 0
 while True:
-    level = move_to_level(level, random.randrange(7), random.random() / 10.)
+    level = move_to_level(level, random.randrange(7), random.random() / 20. + 0.005)
