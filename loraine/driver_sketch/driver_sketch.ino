@@ -19,14 +19,14 @@ void loop() {
   addr = Serial.read();
   data = Serial.read();
   if(Serial.read() == 0x03) {
-    while(!(UCSR1A & (1<<UDRE)));
+    while(!(UCSR1A & (1<<5)));
     
-    UCSR1B |= (1<<TXB8);
+    UCSR1B |= (1<<0);
     UDR1 = addr;
     
-    while(!(UCSR1A & (1<<UDRE)));
+    while(!(UCSR1A & (1<<5)));
     
-    UCSR1B &= ~(1<<TXB8);
+    UCSR1B &= ~(1<<0);
     UDR1 = data;
   }
 }
