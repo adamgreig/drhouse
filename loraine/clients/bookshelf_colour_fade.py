@@ -29,15 +29,15 @@ step=10
 Rstep, Gstep, Bstep = 1, 1, 1
 R,G,B = 0,0,0
 while True:
-	if random.random()>0.99:
+	if random.random()>0.999:
 		Rstep = -Rstep
 	R += Rstep
 
-	if random.random()>0.99:
+	if random.random()>0.999:
 		Gstep = -Gstep
 	G += Gstep
 
-	if random.random()>0.99:
+	if random.random()>0.999:
 		Bstep = -Bstep
 	B += Bstep
 
