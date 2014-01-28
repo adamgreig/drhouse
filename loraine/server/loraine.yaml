@@ -1,4 +1,22 @@
 lights:
+    broadcast:
+        zero:
+            gray: 0x00
+        one:
+            gray: 0x01
+        two:
+            gray: 0x02
+        three:
+            gray: 0x03
+        four:
+            gray: 0x04
+        five:
+            gray: 0x05
+        six:
+            gray: 0x06
+        seven:
+            gray: 0x07
+
     bookshelf:
         one:
             red: 0x0A
