@@ -47,6 +47,7 @@ while True:
 	sys.stdout.write("\r"+" "*80) # Clear line
 	sys.stdout.write("\rR,G,B=\t{0}\t{1}\t{2}\t".format(RGB[0],RGB[1],RGB[2]))
 	sys.stdout.write("steps=\t{0}\t{1}\t{2}".format(steps[0],steps[1],steps[2]))
+	sys.stdout.flush()
 
 	# Propogate the shift register:
 	for i in range(len(shift_reg)-1, 0, -1):
