@@ -36,7 +36,7 @@ steps = [1, 1, 1]
 
 while True:
     for i in range(3):
-        if random.random() > 0.999:
+        if random.random() > 0.998:
             steps[i] = -steps[i]
         rgb[i] += steps[i]
 
