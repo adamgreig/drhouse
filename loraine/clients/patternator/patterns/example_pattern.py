@@ -1,6 +1,7 @@
 # Patternator pattern
 # Does nothing -- example pattern.
 
+
 def example_pattern(beat, beat_progress, bpm):
     # beat is a zero-based integer which increments upon each beat occuring
     # beat_progress is a float which progresses from 0 to 1 through the
