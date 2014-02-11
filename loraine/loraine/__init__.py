@@ -29,7 +29,6 @@ def set_rgb(commands):
         addrs = addresses[command[0]]
         r, g, b = addrs['red'], addrs['green'], addrs['blue']
         arr.extend((r, command[1][0], g, command[1][1], b, command[1][2]))
-    print(arr.tolist())
     sock.sendto(arr.tobytes(), (ip, port))
 
 
