@@ -1,13 +1,19 @@
 import time
-import socket
+import loraine
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
 
-shelves = ("one", "two", "three", "four", "five", "six")
-colours = ("255,0,0", "0,255,0", "0,0,255", "0,0,0")
+colours = ((255, 0, 0), (0, 255, 0), (0, 0, 255), (0, 0, 0))
 
-for shelf in shelves:
+for i, shelf in enumerate(shelves):
     for colour in colours:
-        msg = "bookshelf.{0}={1}".format(shelf, colour)
-        sock.sendto(msg.encode(), ("192.168.2.5", 7878))
+        bookshelf_colours = [(0, 0, 0)] * len(shelves)
+        bookshelf_colours[i] = colour
+
+        loraine.set_rgb(zip(shelves, bookshelf_colours))
         time.sleep(0.2)

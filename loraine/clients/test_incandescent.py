@@ -1,23 +1,18 @@
 import time
-import socket
 import math
+import loraine
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-ORACLE_IP = "192.168.2.5"
-ORACLE_PORT = 7878
-
-shelves = ("one", "two", "three", "four", "five", "six")
-
-
-def set_shelf(shelf, colour):
-    msg = "bookshelf.{0}={1},{2},{3}".format(shelf, colour[0], colour[1],
-                                             colour[2])
-    sock.sendto(msg.encode(), (ORACLE_IP, ORACLE_PORT))
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
 
 
 def set_shelves(colours):
-    for i in range(len(shelves)):
-        set_shelf(shelves[i], tuple(int(x) for x in colours))
+    loraine.set_rgb(zip(shelves,
+                        [tuple(int(x) for x in colours)] * len(shelves)))
 
 
 def inc_to_rgb(state):
@@ -50,7 +45,7 @@ while True:
         state += 0.08
     else:
         state /= 1.15
-    state = state if 0.0<=state<=1.0 else (1.0 if state>=1.0 else 0.0)
+    state = state if 0.0 <= state <= 1.0 else (1.0 if state >= 1.0 else 0.0)
 
     rgb = inc_to_rgb(state)
     rgb = [int(x) for x in rgb]

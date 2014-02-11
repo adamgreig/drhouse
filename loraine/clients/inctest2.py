@@ -1,25 +1,21 @@
 import time
-import socket
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+import loraine
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-ORACLE_IP = "192.168.2.5"
-ORACLE_PORT = 7878
-
-shelves = ("one", "two", "three", "four", "five", "six")
-
-
-def set_shelf(shelf, colour):
-    msg = "bookshelf.{0}={1},{2},{3}".format(shelf, colour[0], colour[1],
-                                             colour[2])
-    sock.sendto(msg.encode(), (ORACLE_IP, ORACLE_PORT))
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
 
 
 def set_shelves(colours):
-    for i in range(len(shelves)):
-        set_shelf(shelves[i], tuple(int(x) for x in colours))
+    loraine.set_rgb(zip(shelves,
+                        [tuple(int(x) for x in colours)] * len(shelves)))
+
 
 state = 0.0
 colours = [(255, 130, 80 ),

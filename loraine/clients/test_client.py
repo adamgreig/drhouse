@@ -1,14 +1,21 @@
 import time
 import random
-import socket
 import colorsys
+import loraine
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
+
+colours = [(0, 0, 0)] * 6
 
 while True:
-    for channel in ("one", "two", "three", "four", "five", "six"):
+    for i, shelf in enumerate(shelves):
         h = random.random()
-        r, g, b = [int(x*255) for x in colorsys.hsv_to_rgb(h, 1.0, 1.0)]
-        msg = "bookshelf.{channel}={r},{g},{b}".format(**locals())
-        sock.sendto(msg.encode(), ("192.168.2.5", 7878))
+        colours[i] = [int(x * 255) for x in colorsys.hsv_to_rgb(h, 1.0, 1.0)]
+
+    loraine.set_rgb(zip(shelves, colours))
     time.sleep(0.3)

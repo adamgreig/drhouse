@@ -1,7 +1,20 @@
+import loraine
 import sys
-import socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-channels = ("zero", "one", "two", "three", "four", "five", "six", "seven")
-for channel in channels:
-    msg = "broadcast.{0}={1}".format(channel, sys.argv[1]).encode()
-    sock.sendto(msg, ("192.168.2.5", 7878))
+
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
+
+if len(sys.argv) != 4 and len(sys.argv) != 2:
+    colours = [(0, 0, 0)] * 6
+
+if len(sys.argv) == 4:
+    colours = [(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))] * 6
+
+if len(sys.argv) == 2:
+    colours = [(int(sys.argv[1]), int(sys.argv[1]), int(sys.argv[1]))] * 6
+
+loraine.set_rgb(zip(shelves, colours))

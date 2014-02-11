@@ -1,17 +1,21 @@
 import sys
 import time
 import random
-import socket
+import loraine
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-red = "255,0,0"
-orange = "255,80,0"
-green = "0,255,0"
-off = "0,0,0"
+red = (255, 0, 0)
+orange = (255, 80, 0)
+green = (0, 255, 0)
+off = (0, 0, 0)
 
 shelf_colours = [green, green, green, orange, orange, red]
-shelf_names = ["one", "two", "three", "four", "five", "six"]
+shelves = ["bookshelf.one",
+           "bookshelf.two",
+           "bookshelf.three",
+           "bookshelf.four",
+           "bookshelf.five",
+           "bookshelf.six"]
 
 ansi_red = "\033[0;31m"
 ansi_grn = "\033[0;32m"
@@ -31,17 +35,12 @@ def draw_shelves(level):
     sys.stdout.flush()
 
 
-def set_shelf(shelf, value):
-    msg = "bookshelf.{0}={1}".format(shelf, value)
-    sock.sendto(msg.encode(), ("192.168.2.5", 7878))
-
-
 def set_shelves(level):
     """level is 0 to 6"""
     draw_shelves(level)
     colours = shelf_colours[:level] + [off]*(len(shelf_colours) - level)
-    for idx, name in enumerate(shelf_names):
-        set_shelf(name, colours[idx])
+
+    loraine.set_rgb(zip(shelves, colours))
 
 
 def move_to_level(current, new, delay):
