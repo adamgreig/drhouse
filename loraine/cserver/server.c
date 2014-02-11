@@ -16,7 +16,7 @@
 
 int main(int argc, char** argv) {
     int sock, node, n, i;
-    char msg_in[BUF_SIZE], msg_out[BUF_SIZE * 2];
+    unsigned char msg_in[BUF_SIZE], msg_out[BUF_SIZE * 2];
     struct sockaddr_in server_addr;
 
     if((node = open(LORAINE_PORT, O_WRONLY | O_SYNC)) < 0) {
