@@ -1,3 +1,11 @@
+// In arduino-1.0.x/hardware/arduino/cores/arduino/CDC.cpp
+// change SERIAL_BUFFER_SIZE to 2048 to prevent buffer overflow
+// on large CDC incoming packets (since 1pkt/ms we have time to
+// write them to the bus eventually but need more buffer to 
+// hold them beforehand. note that 2.5k ram on this chip so
+// 2k is a lot of it, but this code only uses 155 bytes so we're
+// OK really)
+
 void setup() {
   Serial.begin(115200);
   
