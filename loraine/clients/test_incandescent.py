@@ -1,6 +1,8 @@
 import time
 import math
 import loraine
+import numpy as np
+from scipy.interpolate import interp1d
 
 shelves = ["bookshelf.one",
            "bookshelf.two",
@@ -9,6 +11,25 @@ shelves = ["bookshelf.one",
            "bookshelf.five",
            "bookshelf.six"]
 
+inc_colours = np.array(((255, 130, 80 ),
+                        (245, 110, 55 ),
+                        (220, 85 , 30 ),
+                        (200, 70 , 20 ),
+                        (182, 60 , 18 ),
+                        (170, 50 , 15 ),
+                        (160, 40 , 10 ),
+                        (150, 35 , 7  ),
+                        (140, 30 , 5  ),
+                        (120, 20 , 2  ),
+                        (90 , 12 , 0  ),
+                        (60 , 4  , 0  ),
+                        (20 , 1  , 0  ),
+                        (0  , 0  , 0  )))
+x = np.linspace(0, 1, inc_colours[:,0].size)
+inc_red = interp1d(x, inc_colours[:,0], kind="linear")
+inc_green = interp1d(x, inc_colours[:,1], kind="linear")
+inc_blue = interp1d(x, inc_colours[:,2], kind="linear")
+
 
 def set_shelves(colours):
     loraine.set_rgb(zip(shelves,
@@ -16,25 +37,11 @@ def set_shelves(colours):
 
 
 def inc_to_rgb(state):
-    rgb = [float(state)]*3
-
-    # Cap blue and green to give a nice warm white
-    rgb[2] = rgb[2] if rgb[2] < 0.6 else 0.6
-    rgb[1] = rgb[1] if rgb[1] < 0.6 else 0.6
-
-    # Superlinear decay on the blue to give a nice warm decay
-    rgb[2] **= 2.5
-
-    # Bodge factors for low values
-    if state > 0.02:
-        rgb[1] **= 1.5
-    else:
-        rgb[1] = state**0.5/50
-        rgb[0] = rgb[1]
-
-    # Rescale RGB:
-    rgb = [x*255.0 for x in rgb]
+    state = 1 - state
+    rgb = (inc_red(state), inc_green(state), inc_blue(state))
+    rgb = (int(x) for x in rgb)
     return rgb
+
 
 state = 0.0
 while True:
@@ -42,13 +49,12 @@ while True:
     beat_progress = time.time() % 1
 
     if beat_progress < 0.2:
-        state += 0.08
+        state += 0.1
     else:
-        state /= 1.15
+        state -= 0.05
     state = state if 0.0 <= state <= 1.0 else (1.0 if state >= 1.0 else 0.0)
 
     rgb = inc_to_rgb(state)
-    rgb = [int(x) for x in rgb]
 #    print(str(state)+"\t"+str(rgb[0])+"\t"+str(rgb[1])+"\t"+str(rgb[2]))
     set_shelves(rgb)
     time.sleep(0.02)
