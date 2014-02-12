@@ -3,6 +3,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 import loraine
+from scipy.interpolate import interp1d
 
 shelves = ["bookshelf.one",
            "bookshelf.two",
@@ -14,7 +15,7 @@ shelves = ["bookshelf.one",
 
 def set_shelves(colours):
     loraine.set_rgb(zip(shelves,
-                        [tuple(int(x) for x in colours)] * len(shelves)))
+                        [tuple(int(x) for x in colours*255)] * len(shelves)))
 
 
 state = 0.0
@@ -29,11 +30,8 @@ colours = [(255, 130, 80 ),
            (140, 30 , 5  ),
            (120, 20 , 2  ),
            (90 , 12 , 0  ),
-           (80 , 5  , 0  ),
            (60 , 4  , 0  ),
-           (40 , 2  , 0  ),
            (20 , 1  , 0  ),
-           (15 , 1  , 0  ),
            (0  , 0  , 0  )
            ]
 
@@ -42,40 +40,25 @@ reds = cols[:,0]
 greens = cols[:,1]
 blues = cols[:,2]
 
-x = np.array(range(0, reds.size))
-redfit = 255 - 255*(x/15)
-greenfit = np.array(x)
-greenfit = 4000 * np.exp(-x/1.7)
-greenfit[0:10] = 135 * np.exp(-x[0:10]/5)
-bluefit = 80 * np.exp(-x/2.5)
+x = np.linspace(0, 1, reds.size)
+redfit = interp1d(x, reds, kind="linear")
+greenfit = interp1d(x, greens, kind="linear")
+bluefit = interp1d(x, blues, kind="linear")
 
-for i in range(0, redfit.size):
-    print(str(reds[i])+"\t"+str(greens[i])+"\t"+str(blues[i])+"\t"+str(int(redfit[i]))+"\t"+str(int(greenfit[i]))+"\t"+str(int(bluefit[i])))
+x = np.linspace(0, 1, 100)
+plt.plot(reds, "r*")
+plt.plot(x*(len(reds)-1),redfit(x), "r")
+plt.plot(greens,"g*")
+plt.plot(x*(len(greens)-1), greenfit(x),"g")
+plt.plot(blues,"b*")
+plt.plot(x*(len(blues)-1), bluefit(x),"b")
 
-plt.plot(x,(reds), "r*")
-plt.plot(x,(redfit), "r")
-plt.plot((greens),"g*")
-plt.plot((greenfit),"g")
-plt.plot((blues),"b*")
-plt.plot((bluefit),"b")
-plt.plot(np.zeros(reds.shape), "black")
 plt.yscale('log')
 plt.show()
 
-#for colour in colours:
-#    set_shelves(colour)
-#    time.sleep(0.05)
-
-for val in range(0,20):
-    red = 255-255*val/15
-    green = 135*np.exp(-val/5) if val <= 10 else 4000*np.exp(-val/1.7)
-    blue = 80*np.exp(-val/3)
-    
-    red, green, blue = int(red), int(green), int(blue)
-    red = red if 0<=red<=255 else (255 if red>255 else 0)
-    green = green if 0<=green<=255 else (255 if green>255 else 0)
-    blue = blue if 0<=blue<=255 else (255 if blue>255 else 0)
-
-#    set_shelves((red, green, blue))
-    print(red, green, blue)
-    time.sleep(0.5)
+x = np.linspace(0, 1, 50)
+timer=time.time()
+for i in x:
+    set_shelves((redfit(i), greenfit(i), bluefit(i)))
+    time.sleep(0.02)
+print("took "+str(time.time()-timer)+" secs for "+str(len(x))+" its")
