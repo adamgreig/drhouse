@@ -1,0 +1,5 @@
+make bookshelf_colour_fade define the bottom shelf based on a random walk based on Hue and Value (with full saturation) rather than RGB.  Or maybe walk based on all three.  This might be more interesting than RGB which often has a boringly low saturation.
+
+Beat detect and Bar detect
+
+random_hue thing should do something similar but with just shades of purple/violet.  Maybe change after a while to yellows/oranges. The latter based on bar detection or multiples and the former based on beats.
