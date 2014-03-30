@@ -474,17 +474,6 @@ F 3 "" H 7000 6150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7000 6000
-$Comp
-L CONN_8 P?
-U 1 1 533887C0
-P 10950 5250
-F 0 "P?" V 10900 5250 60  0000 C CNN
-F 1 "CONN_8" V 11000 5250 60  0000 C CNN
-F 2 "" H 10950 5250 60  0000 C CNN
-F 3 "" H 10950 5250 60  0000 C CNN
-	1    10950 5250
-	1    0    0    -1  
-$EndComp
 Text Label 3450 3050 2    60   ~ 0
 VCC
 Text Label 3650 5450 2    60   ~ 0
@@ -546,17 +535,7 @@ $EndComp
 Wire Wire Line
 	3000 7150 3200 7150
 Wire Wire Line
-	6900 5600 10600 5600
-Wire Wire Line
-	7350 5500 10600 5500
-Wire Wire Line
-	7450 5400 10600 5400
-Wire Wire Line
 	6900 5100 7350 5100
-Wire Wire Line
-	7350 5100 7350 5500
-Wire Wire Line
-	7450 5400 7450 4600
 Wire Wire Line
 	7450 4600 6900 4600
 Wire Wire Line
@@ -577,16 +556,6 @@ Wire Wire Line
 	7850 2600 7850 5000
 Wire Wire Line
 	7950 2100 7950 4900
-Wire Wire Line
-	7550 5300 10600 5300
-Wire Wire Line
-	7650 5200 10600 5200
-Wire Wire Line
-	7750 5100 10600 5100
-Wire Wire Line
-	7850 5000 10600 5000
-Wire Wire Line
-	7950 4900 10600 4900
 $Comp
 L LED D?
 U 1 1 53389F99
@@ -850,4 +819,62 @@ Text Label 1950 3650 2    60   ~ 0
 RESET
 Wire Wire Line
 	1950 3650 2100 3650
+$Comp
+L CONN_8X2 P?
+U 1 1 5338D875
+P 10050 5250
+F 0 "P?" H 10050 5700 60  0000 C CNN
+F 1 "OUTPUTS" V 10050 5250 50  0000 C CNN
+F 2 "" H 10050 5250 60  0000 C CNN
+F 3 "" H 10050 5250 60  0000 C CNN
+	1    10050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5600 9650 5600
+Wire Wire Line
+	7350 5100 7350 5500
+Wire Wire Line
+	7350 5500 9650 5500
+Wire Wire Line
+	7450 4600 7450 5400
+Wire Wire Line
+	7450 5400 9650 5400
+Wire Wire Line
+	7550 5300 9650 5300
+Wire Wire Line
+	7650 5200 9650 5200
+Wire Wire Line
+	7750 5100 9650 5100
+Wire Wire Line
+	7850 5000 9650 5000
+Wire Wire Line
+	7950 4900 9650 4900
+Text Label 10600 4800 0    60   ~ 0
+12V
+Wire Wire Line
+	10600 4800 10600 5600
+Wire Wire Line
+	10600 4900 10450 4900
+Wire Wire Line
+	10600 5000 10450 5000
+Connection ~ 10600 4900
+Wire Wire Line
+	10600 5100 10450 5100
+Connection ~ 10600 5000
+Wire Wire Line
+	10600 5200 10450 5200
+Connection ~ 10600 5100
+Wire Wire Line
+	10600 5300 10450 5300
+Connection ~ 10600 5200
+Wire Wire Line
+	10600 5400 10450 5400
+Connection ~ 10600 5300
+Wire Wire Line
+	10450 5500 10600 5500
+Connection ~ 10600 5400
+Wire Wire Line
+	10600 5600 10450 5600
+Connection ~ 10600 5500
 $EndSCHEMATC
