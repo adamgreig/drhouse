@@ -1,11 +1,6 @@
-update=Sun 30 Mar 2014 23:14:17 BST
+update=Mon 31 Mar 2014 18:45:21 BST
 version=1
 last_client=kicad
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [pcbnew]
 version=1
 LastNetListRead=
@@ -26,7 +21,6 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -43,6 +37,7 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
+LibDir=
 [eeschema]
 version=1
 PageLayoutDescrFile=
@@ -86,5 +81,11 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=sn65176bd
+LibName32=bd679
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [general]
 version=1
