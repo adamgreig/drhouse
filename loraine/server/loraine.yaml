@@ -1,21 +1,21 @@
 lights:
     broadcast:
         zero:
-            gray: 0x00
+            grey: 0x00
         one:
-            gray: 0x01
+            grey: 0x01
         two:
-            gray: 0x02
+            grey: 0x02
         three:
-            gray: 0x03
+            grey: 0x03
         four:
-            gray: 0x04
+            grey: 0x04
         five:
-            gray: 0x05
+            grey: 0x05
         six:
-            gray: 0x06
+            grey: 0x06
         seven:
-            gray: 0x07
+            grey: 0x07
 
     bookshelf:
         one:
@@ -45,11 +45,11 @@ lights:
 
     fairylights:
         back:
-            gray: 0x20
+            grey: 0x21
         middle:
-            gray: 0x21
+            grey: 0x20
         front:
-            gray: 0x30
+            grey: 0x22
 
     cabinet:
         rear:

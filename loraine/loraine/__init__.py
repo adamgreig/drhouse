@@ -31,5 +31,16 @@ def set_rgb(commands):
         arr.extend((r, command[1][0], g, command[1][1], b, command[1][2]))
     sock.sendto(arr.tobytes(), (ip, port))
 
+def set_grey(commands):
+    """commands = [("fairylights.back", 255),
+                   ("fairylights.middle", 255), ..., ]
+    """
+    arr = array('B')
+    for command in commands:
+        addrs = addresses[command[0]]
+        grey = addrs['grey']
+        arr.extend((grey, command[1]))
+    sock.sendto(arr.tobytes(), (ip, port))
+
 
 fetch(url)
