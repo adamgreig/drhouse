@@ -29,7 +29,11 @@ def set_rgb(commands):
         addrs = addresses[command[0]]
         r, g, b = addrs['red'], addrs['green'], addrs['blue']
         arr.extend((r, command[1][0], g, command[1][1], b, command[1][2]))
-    sock.sendto(arr.tobytes(), (ip, port))
+    if hasattr(arr, 'tobytes'):
+        sock.sendto(arr.tobytes(), (ip, port))
+    else:
+        sock.sendto(arr.tostring(), (ip, port))
+
 
 def set_grey(commands):
     """commands = [("fairylights.back", 255),
@@ -40,7 +44,10 @@ def set_grey(commands):
         addrs = addresses[command[0]]
         grey = addrs['grey']
         arr.extend((grey, command[1]))
-    sock.sendto(arr.tobytes(), (ip, port))
+    if hasattr(arr, 'tobytes'):
+        sock.sendto(arr.tobytes(), (ip, port))
+    else:
+        sock.sendto(arr.tostring(), (ip, port))
 
 
 fetch(url)
