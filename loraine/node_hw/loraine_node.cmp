@@ -1,0 +1,276 @@
+Cmp-Mod V01 Created by CvPcb (2014-03-10 BZR 4741)-product date = Mon 31 Mar 2014 14:23:48 BST
+
+BeginCmp
+TimeStamp = /53386F94;
+Reference = U1;
+ValeurCmp = UA7805CKCT;
+IdModule  = Discret:TO220_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338669E;
+Reference = IC1;
+ValeurCmp = ATTINY2313A-S;
+IdModule  = SMD_Packages:SO20L;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388410;
+Reference = Q5;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /533882C1;
+Reference = Q3;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388424;
+Reference = Q6;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388438;
+Reference = Q7;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338844C;
+Reference = Q8;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389FD5;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389FE9;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389FFD;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /533877F8;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53387FC9;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53387FDD;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53387FF1;
+Reference = R7;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388005;
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388019;
+Reference = R9;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338802D;
+Reference = R10;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53388041;
+Reference = R11;
+ValeurCmp = 1k;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53386940;
+Reference = U2;
+ValeurCmp = SN65176BD;
+IdModule  = SOIC_Packages:SOIC-8_N;
+EndCmp
+
+BeginCmp
+TimeStamp = /53387407;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338B71A;
+Reference = P1;
+ValeurCmp = MOLEX;
+IdModule  = Connect:SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53387A3C;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338AB56;
+Reference = C3;
+ValeurCmp = 0.1u;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /533878B4;
+Reference = C4;
+ValeurCmp = 16pF;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338788F;
+Reference = C5;
+ValeurCmp = 16pF;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338A896;
+Reference = C6;
+ValeurCmp = 0.1u;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /533879A3;
+Reference = CON1;
+ValeurCmp = BARREL_JACK;
+IdModule  = Connect:BARREL_JACK;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389F99;
+Reference = D1;
+ValeurCmp = RED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389FAD;
+Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53389FC1;
+Reference = D3;
+ValeurCmp = BLUE;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /533882D5;
+Reference = Q4;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338B738;
+Reference = P2;
+ValeurCmp = MOLEX;
+IdModule  = Connect:SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338BC50;
+Reference = P3;
+ValeurCmp = SOLDER_PAD;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338C872;
+Reference = P4;
+ValeurCmp = ICSP;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338D875;
+Reference = P5;
+ValeurCmp = OUTPUTS;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338950E;
+Reference = P6;
+ValeurCmp = BUS;
+IdModule  = Connect:SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /533876DD;
+Reference = Q1;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /533882AD;
+Reference = Q2;
+ValeurCmp = FZT600;
+IdModule  = SMD_Packages:SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /5338EB5B;
+Reference = C1;
+ValeurCmp = 0.33uF;
+IdModule  = ;
+EndCmp
+
+EndListe
