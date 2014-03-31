@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2014-03-10 BZR 4741)-product date = Mon 31 Mar 2014 18:43:53 BST
+Cmp-Mod V01 Created by CvPcb (2014-03-10 BZR 4741)-product date = Mon 31 Mar 2014 21:28:56 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -116,6 +116,13 @@ BeginCmp
 TimeStamp = /5338950E;
 Reference = P6;
 ValeurCmp = BUS;
+IdModule  = Connect:SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5339D3B6;
+Reference = P7;
+ValeurCmp = BUS_THRU;
 IdModule  = Connect:SIL-2;
 EndCmp
 
