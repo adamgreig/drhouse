@@ -1,6 +1,6 @@
-update=Mon 31 Mar 2014 18:45:21 BST
+update=Mon 31 Mar 2014 23:12:17 BST
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -38,6 +38,13 @@ LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
 LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[general]
+version=1
 [eeschema]
 version=1
 PageLayoutDescrFile=
@@ -82,10 +89,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=sn65176bd
 LibName32=bd679
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
-[general]
-version=1
+LibName33=tl4242
