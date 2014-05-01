@@ -1,24 +1,24 @@
-Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 21:13:29 BST
+Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 23:13:35 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
 Reference = C1;
 ValeurCmp = 0.33uF;
-IdModule  = ;
+IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53387A3C;
 Reference = C2;
 ValeurCmp = 0.1uF;
-IdModule  = ;
+IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /5338AB56;
 Reference = C3;
-ValeurCmp = 0.1u;
-IdModule  = ;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
@@ -38,8 +38,8 @@ EndCmp
 BeginCmp
 TimeStamp = /5338A896;
 Reference = C6;
-ValeurCmp = 0.1u;
-IdModule  = ;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
@@ -81,7 +81,7 @@ BeginCmp
 TimeStamp = /5338BC50;
 Reference = P3;
 ValeurCmp = SOLDER_PAD;
-IdModule  = ;
+IdModule  = Connect:SIL-2;
 EndCmp
 
 BeginCmp
@@ -172,21 +172,21 @@ BeginCmp
 TimeStamp = /5339FA1A;
 Reference = R1;
 ValeurCmp = 0.47R 0.25W;
-IdModule  = ;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /5339FA2E;
 Reference = R2;
 ValeurCmp = 0.47R 0.25W;
-IdModule  = ;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
 EndCmp
 
 BeginCmp
 TimeStamp = /5339FA42;
 Reference = R3;
 ValeurCmp = 0.47R 0.25W;
-IdModule  = ;
+IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
 EndCmp
 
 BeginCmp
@@ -284,7 +284,7 @@ BeginCmp
 TimeStamp = /53387407;
 Reference = X1;
 ValeurCmp = 16MHz;
-IdModule  = ;
+IdModule  = Crystals:Crystal_HC49-SD_SMD;
 EndCmp
 
 EndListe
