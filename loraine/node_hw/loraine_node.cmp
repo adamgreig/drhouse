@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 20:41:36 BST
+Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 21:13:29 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -53,7 +53,7 @@ BeginCmp
 TimeStamp = /53619F29;
 Reference = D1;
 ValeurCmp = STAR_LED;
-IdModule  = ;
+IdModule  = led_module:led_module;
 EndCmp
 
 BeginCmp
