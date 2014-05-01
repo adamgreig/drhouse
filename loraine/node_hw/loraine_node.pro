@@ -1,10 +1,6 @@
-update=30/03/2013 13:45:59
+update=Thu 01 May 2014 19:23:05 BST
 version=1
-last_client=pcbnew
-[general]
-version=1
-RootSch=
-BoardNm=
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -86,3 +82,5 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
+[general]
+version=1
