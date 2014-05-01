@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Fri 02 May 2014 00:07:53 BST
+Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Fri 02 May 2014 00:22:33 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -81,7 +81,7 @@ BeginCmp
 TimeStamp = /5338BC50;
 Reference = P3;
 ValeurCmp = SOLDER_PAD;
-IdModule  = Connect:SIL-2;
+IdModule  = solder_pad:SIL-2;
 EndCmp
 
 BeginCmp
