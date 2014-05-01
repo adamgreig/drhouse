@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 23:13:35 BST
+Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Fri 02 May 2014 00:07:53 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -66,15 +66,15 @@ EndCmp
 BeginCmp
 TimeStamp = /5338B71A;
 Reference = P1;
-ValeurCmp = MOLEX;
-IdModule  = Connect:SIL-2;
+ValeurCmp = POWER_THRU;
+IdModule  = molex-22-23-2021:SIL-2;
 EndCmp
 
 BeginCmp
 TimeStamp = /5338B738;
 Reference = P2;
-ValeurCmp = MOLEX;
-IdModule  = Connect:SIL-2;
+ValeurCmp = POWER;
+IdModule  = molex-22-23-2021:SIL-2;
 EndCmp
 
 BeginCmp
@@ -102,14 +102,14 @@ BeginCmp
 TimeStamp = /5338950E;
 Reference = P6;
 ValeurCmp = BUS;
-IdModule  = Connect:SIL-2;
+IdModule  = molex-22-23-2021:SIL-2;
 EndCmp
 
 BeginCmp
 TimeStamp = /5339D3B6;
 Reference = P7;
 ValeurCmp = BUS_THRU;
-IdModule  = Connect:SIL-2;
+IdModule  = molex-22-23-2021:SIL-2;
 EndCmp
 
 BeginCmp

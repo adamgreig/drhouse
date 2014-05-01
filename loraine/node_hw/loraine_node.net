@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/dwt27/git/drhouse/loraine/node_hw/loraine_node.sch)
-    (date "Thu 01 May 2014 23:13:20 BST")
+    (date "Fri 02 May 2014 00:07:09 BST")
     (tool "Eeschema (2014-04-30 BZR 4838)-product"))
   (components
     (comp (ref U2)
@@ -102,12 +102,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5338AB56))
     (comp (ref P1)
-      (value MOLEX)
+      (value POWER_THRU)
       (libsource (lib conn) (part CONN_2))
       (sheetpath (names /) (tstamps /))
       (tstamp 5338B71A))
     (comp (ref P2)
-      (value MOLEX)
+      (value POWER)
       (libsource (lib conn) (part CONN_2))
       (sheetpath (names /) (tstamps /))
       (tstamp 5338B738))
