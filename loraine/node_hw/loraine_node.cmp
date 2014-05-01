@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2014-03-10 BZR 4741)-product date = Mon 31 Mar 2014 21:28:56 BST
+Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Thu 01 May 2014 20:41:36 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -50,23 +50,9 @@ IdModule  = Connect:BARREL_JACK;
 EndCmp
 
 BeginCmp
-TimeStamp = /53389F99;
+TimeStamp = /53619F29;
 Reference = D1;
-ValeurCmp = RED;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /53389FAD;
-Reference = D2;
-ValeurCmp = GREEN;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /53389FC1;
-Reference = D3;
-ValeurCmp = BLUE;
+ValeurCmp = STAR_LED;
 IdModule  = ;
 EndCmp
 
@@ -183,23 +169,23 @@ IdModule  = to126:TO126;
 EndCmp
 
 BeginCmp
-TimeStamp = /53389FD5;
+TimeStamp = /5339FA1A;
 Reference = R1;
-ValeurCmp = R;
+ValeurCmp = 0.47R 0.25W;
 IdModule  = ;
 EndCmp
 
 BeginCmp
-TimeStamp = /53389FE9;
+TimeStamp = /5339FA2E;
 Reference = R2;
-ValeurCmp = R;
+ValeurCmp = 0.47R 0.25W;
 IdModule  = ;
 EndCmp
 
 BeginCmp
-TimeStamp = /53389FFD;
+TimeStamp = /5339FA42;
 Reference = R3;
-ValeurCmp = R;
+ValeurCmp = 0.47R 0.25W;
 IdModule  = ;
 EndCmp
 
@@ -271,6 +257,27 @@ TimeStamp = /53386940;
 Reference = U2;
 ValeurCmp = SN65176BD;
 IdModule  = SOIC_Packages:SOIC-8_N;
+EndCmp
+
+BeginCmp
+TimeStamp = /5339EB06;
+Reference = U3;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
+EndCmp
+
+BeginCmp
+TimeStamp = /5339EB1A;
+Reference = U4;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
+EndCmp
+
+BeginCmp
+TimeStamp = /5339EB2E;
+Reference = U5;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
 EndCmp
 
 BeginCmp
