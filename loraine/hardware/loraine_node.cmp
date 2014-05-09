@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-04-30 BZR 4838)-product   date = Fri 02 May 2014 00:22:33 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Thu 08 May 2014 23:43:33 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -50,10 +50,24 @@ IdModule  = Connect:BARREL_JACK;
 EndCmp
 
 BeginCmp
-TimeStamp = /53619F29;
+TimeStamp = /536C1D22;
 Reference = D1;
-ValeurCmp = STAR_LED;
-IdModule  = led_module:led_module;
+ValeurCmp = RED;
+IdModule  = power_led:power_led;
+EndCmp
+
+BeginCmp
+TimeStamp = /536C1D80;
+Reference = D2;
+ValeurCmp = GREEN;
+IdModule  = power_led:power_led;
+EndCmp
+
+BeginCmp
+TimeStamp = /536C1DC9;
+Reference = D3;
+ValeurCmp = BLUE;
+IdModule  = power_led:power_led;
 EndCmp
 
 BeginCmp
