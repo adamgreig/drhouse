@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Thu 08 May 2014 23:43:33 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sat 10 May 2014 22:40:30 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -47,27 +47,6 @@ TimeStamp = /533879A3;
 Reference = CON1;
 ValeurCmp = BARREL_JACK;
 IdModule  = Connect:BARREL_JACK;
-EndCmp
-
-BeginCmp
-TimeStamp = /536C1D22;
-Reference = D1;
-ValeurCmp = RED;
-IdModule  = power_led:power_led;
-EndCmp
-
-BeginCmp
-TimeStamp = /536C1D80;
-Reference = D2;
-ValeurCmp = GREEN;
-IdModule  = power_led:power_led;
-EndCmp
-
-BeginCmp
-TimeStamp = /536C1DC9;
-Reference = D3;
-ValeurCmp = BLUE;
-IdModule  = power_led:power_led;
 EndCmp
 
 BeginCmp
@@ -127,6 +106,13 @@ IdModule  = molex-22-23-2021:SIL-2;
 EndCmp
 
 BeginCmp
+TimeStamp = /536EB293;
+Reference = P8;
+ValeurCmp = CONN_9;
+IdModule  = Connect:SIL-9;
+EndCmp
+
+BeginCmp
 TimeStamp = /5339A559;
 Reference = Q1;
 ValeurCmp = BD679;
@@ -180,27 +166,6 @@ TimeStamp = /5339A5EF;
 Reference = Q8;
 ValeurCmp = BD679;
 IdModule  = to126:TO126;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339FA1A;
-Reference = R1;
-ValeurCmp = 0.47R 0.25W;
-IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339FA2E;
-Reference = R2;
-ValeurCmp = 0.47R 0.25W;
-IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339FA42;
-Reference = R3;
-ValeurCmp = 0.47R 0.25W;
-IdModule  = Resistors_SMD:Resistor_SMD0805_HandSoldering;
 EndCmp
 
 BeginCmp
@@ -271,27 +236,6 @@ TimeStamp = /53386940;
 Reference = U2;
 ValeurCmp = SN65176BD;
 IdModule  = SOIC_Packages:SOIC-8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339EB06;
-Reference = U3;
-ValeurCmp = TL4242;
-IdModule  = 8-son:8-SON;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339EB1A;
-Reference = U4;
-ValeurCmp = TL4242;
-IdModule  = 8-son:8-SON;
-EndCmp
-
-BeginCmp
-TimeStamp = /5339EB2E;
-Reference = U5;
-ValeurCmp = TL4242;
-IdModule  = 8-son:8-SON;
 EndCmp
 
 BeginCmp
