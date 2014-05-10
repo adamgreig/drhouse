@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sat 10 May 2014 22:42:25 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sat 10 May 2014 22:53:40 BST
 
 BeginCmp
 TimeStamp = /536E9D14;
@@ -22,10 +22,24 @@ IdModule  = power_led:power_led;
 EndCmp
 
 BeginCmp
-TimeStamp = /536EA4F9;
-Reference = P1;
-ValeurCmp = CONN_9;
-IdModule  = Connect:SIL-9;
+TimeStamp = /536EA049;
+Reference = K1;
+ValeurCmp = CONN_GND;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /536EA083;
+Reference = K2;
+ValeurCmp = CONN_LEDS;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /536EA0BA;
+Reference = K3;
+ValeurCmp = CONN_12V;
+IdModule  = Connect:SIL-3;
 EndCmp
 
 BeginCmp

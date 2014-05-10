@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sat 10 May 2014 22:40:30 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sat 10 May 2014 22:50:29 BST
 
 BeginCmp
 TimeStamp = /5338EB5B;
@@ -57,6 +57,27 @@ IdModule  = SMD_Packages:SO20L;
 EndCmp
 
 BeginCmp
+TimeStamp = /536EA170;
+Reference = K1;
+ValeurCmp = CONN_GND;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /536EA1BC;
+Reference = K2;
+ValeurCmp = CONN_LEDS;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /536EA1FB;
+Reference = K3;
+ValeurCmp = CONN_12V;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
 TimeStamp = /5338B71A;
 Reference = P1;
 ValeurCmp = POWER_THRU;
@@ -103,13 +124,6 @@ TimeStamp = /5339D3B6;
 Reference = P7;
 ValeurCmp = BUS_THRU;
 IdModule  = molex-22-23-2021:SIL-2;
-EndCmp
-
-BeginCmp
-TimeStamp = /536EB293;
-Reference = P8;
-ValeurCmp = CONN_9;
-IdModule  = Connect:SIL-9;
 EndCmp
 
 BeginCmp
