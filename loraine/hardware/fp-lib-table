@@ -1,7 +1,7 @@
 (fp_lib_table
-  (lib (name to126)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/node_hw/to126.pretty)(options "")(descr ""))
-  (lib (name 8-son)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/node_hw/8-son.pretty)(options "")(descr ""))
-  (lib (name led_module)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/node_hw/led_module.pretty)(options "")(descr ""))
-  (lib (name molex-22-23-2021)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/node_hw/molex-22-23-2021.pretty)(options "")(descr ""))
-  (lib (name solder_pad)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/node_hw/solder_pad.pretty)(options "")(descr ""))
+  (lib (name to126)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/to126.pretty)(options "")(descr ""))
+  (lib (name 8-son)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/8-son.pretty)(options "")(descr ""))
+  (lib (name molex-22-23-2021)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/molex-22-23-2021.pretty)(options "")(descr ""))
+  (lib (name solder_pad)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/solder_pad.pretty)(options "")(descr ""))
+  (lib (name heatsunk_star_led)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/heatsunk_star_led.pretty)(options "")(descr ""))
 )
