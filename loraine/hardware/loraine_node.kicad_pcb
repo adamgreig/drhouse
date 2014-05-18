@@ -5,7 +5,7 @@
     (no_connects 48)
     (area 50.749999 50.749999 101.650001 104.190001)
     (thickness 1.6)
-    (drawings 6)
+    (drawings 4)
     (tracks 221)
     (zones 0)
     (modules 41)
@@ -1437,10 +1437,8 @@
     (pad "" thru_hole circle (at -9.017 -9.017) (size 3.4 3.4) (drill 3.4) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (gr_line (start 101.6 73.66) (end 101.6 104.14) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 73.66 73.66) (end 101.6 73.66) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 73.66 50.8) (end 73.66 73.66) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 50.8 50.8) (end 73.66 50.8) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 101.6 50.8) (end 50.8 50.8) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 101.6 104.14) (end 101.6 50.8) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 50.8 104.14) (end 101.6 104.14) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 50.8 50.8) (end 50.8 104.14) (angle 90) (layer Edge.Cuts) (width 0.1))
 
