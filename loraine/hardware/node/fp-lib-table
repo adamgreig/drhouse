@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name to126)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/node/to126.pretty)(options "")(descr ""))
+  (lib (name molex-22-23-2021)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/node/molex-22-23-2021.pretty)(options "")(descr ""))
+  (lib (name solder_pad)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/node/solder_pad.pretty)(options "")(descr ""))
+)

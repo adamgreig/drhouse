@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sun 18 May 2014 18:40:31 BST
+
+BeginCmp
+TimeStamp = /5378EA68;
+Reference = D1;
+ValeurCmp = STAR_LED;
+IdModule  = heatsunk_star_led:heatsunk_star_led_board;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378EE35;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378F101;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378F1E6;
+Reference = K3;
+ValeurCmp = CONN_3;
+IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378EAD1;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378EB2F;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378EB62;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = SMD_Packages:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378E9C8;
+Reference = U1;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378F0F6;
+Reference = U2;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
+EndCmp
+
+BeginCmp
+TimeStamp = /5378F1DB;
+Reference = U3;
+ValeurCmp = TL4242;
+IdModule  = 8-son:8-SON;
+EndCmp
+
+EndListe
