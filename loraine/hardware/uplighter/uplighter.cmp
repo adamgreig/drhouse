@@ -1,4 +1,25 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Sun 18 May 2014 18:40:31 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Mon 19 May 2014 21:12:42 BST
+
+BeginCmp
+TimeStamp = /537A69DC;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /537A6A0C;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /537A6A35;
+Reference = C3;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:c_0805;
+EndCmp
 
 BeginCmp
 TimeStamp = /5378EA68;
