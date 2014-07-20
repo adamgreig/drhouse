@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sun 20 Jul 2014 18:22:15 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sun 20 Jul 2014 18:41:23 BST
 
 BeginCmp
 TimeStamp = /533878B4;
@@ -183,169 +183,113 @@ IdModule  = sot26:sot26;
 EndCmp
 
 BeginCmp
-TimeStamp = /533877F8;
-Reference = R1;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53387FC9;
-Reference = R2;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53387FDD;
-Reference = R3;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53387FF1;
-Reference = R4;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53388005;
-Reference = R5;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53388019;
-Reference = R6;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /5338802D;
-Reference = R7;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /53388041;
-Reference = R8;
-ValeurCmp = 1k;
-IdModule  = SMD_Packages:SM0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /53C70B69;
-Reference = R9;
+Reference = R1;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8837;
-Reference = R10;
+Reference = R2;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8B2F;
-Reference = R11;
+Reference = R3;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8D44;
-Reference = R12;
+Reference = R4;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8F3B;
-Reference = R13;
+Reference = R5;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC9380;
-Reference = R14;
+Reference = R6;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC9890;
-Reference = R15;
+Reference = R7;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC9B16;
-Reference = R16;
+Reference = R8;
 ValeurCmp = 240;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53C70202;
-Reference = R17;
+Reference = R9;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8841;
-Reference = R18;
+Reference = R10;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8B39;
-Reference = R19;
+Reference = R11;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8D4E;
-Reference = R20;
+Reference = R12;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC8F45;
-Reference = R21;
+Reference = R13;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC938A;
-Reference = R22;
+Reference = R14;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC989A;
-Reference = R23;
+Reference = R15;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /53CC9B20;
-Reference = R24;
+Reference = R16;
 ValeurCmp = 10k;
 IdModule  = SMD_Packages:SM0805;
 EndCmp
