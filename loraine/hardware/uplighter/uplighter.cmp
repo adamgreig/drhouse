@@ -1,24 +1,31 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Mon 19 May 2014 21:12:42 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Mon 21 Jul 2014 20:01:38 BST
 
 BeginCmp
 TimeStamp = /537A69DC;
 Reference = C1;
-ValeurCmp = C;
+ValeurCmp = 100n;
 IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /537A6A0C;
 Reference = C2;
-ValeurCmp = C;
+ValeurCmp = 100n;
 IdModule  = Capacitors_SMD:c_0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /537A6A35;
 Reference = C3;
-ValeurCmp = C;
+ValeurCmp = 100n;
 IdModule  = Capacitors_SMD:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53CD6288;
+Reference = CON1;
+ValeurCmp = BARREL_JACK;
+IdModule  = Connect:BARREL_JACK;
 EndCmp
 
 BeginCmp
@@ -47,6 +54,27 @@ TimeStamp = /5378F1E6;
 Reference = K3;
 ValeurCmp = CONN_3;
 IdModule  = Connect:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53CD6307;
+Reference = P1;
+ValeurCmp = POWER_THRU;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /53CD63AF;
+Reference = P2;
+ValeurCmp = POWER;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /53CD640C;
+Reference = P3;
+ValeurCmp = SOLDER_PAD;
+IdModule  = solder_pad:SIL-2;
 EndCmp
 
 BeginCmp

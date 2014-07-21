@@ -1,3 +1,33 @@
-Editing and layout
-Routing
+Check uplighter schematic:
+    * tl4242 dissipation (with 3W star)
+        * Red: P = 350mA * (5 - 2.5 - 0.177) = 0.81W
+        * Green: P = 0.35 * (5 - 3.3 - 0.177) = 0.53W
+        * Blue: 0.53W
+        * Total: 1.87W
+        * Pretty unacceptable for a 50K/W thermal resistance to ambient!
+    * For 1W star:
+        * Red: P = 150mA * (5 - 2.5 - 0.177) = 0.35W
+        * Green: P = 0.15 * (5 - 3.3 - 0.177) = 0.23W
+        * Blue: 0.23W
+        * Total: 0.81W
+        * Toasty, but probably acceptable.
+    * tl4242 setup
+    * led/sense R setup
+    * connectors match node schematic.
+Check node schematic:
+    * 7805 and psu setup
+    * attiny pin assignment
+    * attiny periphs (power, xtal, reset), ICSP
+    * bus driver setup
+    * driver design
+    * output connector sanity
+    * other connector sanity
 
+
+Check uplighter pcb
+    * heatsink size/shape/pinout
+    * heatsink/led mechanical considerations
+    * pcb mechanical considerations
+    ...
+check node pcb
+check pcbs fit together

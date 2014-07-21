@@ -1231,8 +1231,6 @@ Text GLabel 2250 1025 2    60   Input ~ 0
 VIN
 Wire Wire Line
 	2200 1025 2250 1025
-Text GLabel 4750 1375 0    60   Output ~ 0
-VIN
 Wire Wire Line
 	4875 1375 4875 975 
 Connection ~ 4875 1375
@@ -1243,4 +1241,17 @@ Text GLabel 10275 5150 0    60   Input ~ 0
 VIN
 Wire Wire Line
 	10275 5150 10375 5150
+$Comp
+L +5V #PWR?
+U 1 1 53CD6C0A
+P 4750 1325
+F 0 "#PWR?" H 4750 1415 20  0001 C CNN
+F 1 "+5V" H 4750 1415 30  0000 C CNN
+F 2 "" H 4750 1325 60  0000 C CNN
+F 3 "" H 4750 1325 60  0000 C CNN
+	1    4750 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1325 4750 1375
 $EndSCHEMATC
