@@ -3,31 +3,29 @@ Check uplighter schematic:
         * Red: P = 350mA * (5 - 2.5 - 0.177) = 0.81W
         * Green: P = 0.35 * (5 - 3.3 - 0.177) = 0.53W
         * Blue: 0.53W
-        * Total: 1.87W
-        * Pretty unacceptable for a 50K/W thermal resistance to ambient!
     * For 1W star:
         * Red: P = 150mA * (5 - 2.5 - 0.177) = 0.35W
         * Green: P = 0.15 * (5 - 3.3 - 0.177) = 0.23W
         * Blue: 0.23W
-        * Total: 0.81W
-        * Toasty, but probably acceptable.
-    * tl4242 setup
-    * led/sense R setup
-    * connectors match node schematic.
+        * Thermal R is somewhere between 4 or 50 or 114. All okay for 1W star
+    * tl4242 setup: Looks good
+    * led/sense R setup: Looks good
+    * connectors match node schematic: Yep
 Check node schematic:
-    * 7805 and psu setup
-    * attiny pin assignment
-    * attiny periphs (power, xtal, reset), ICSP
-    * bus driver setup
-    * driver design
-    * output connector sanity
-    * other connector sanity
+    * 7805 and psu setup: looks good
+    * attiny pin assignment: looks good
+    * attiny periphs (power, xtal, reset), ICSP: Good
+    * bus driver setup: Good
+    * driver design: Good
+    * output connector sanity: Uh huh
+    * other connector sanity: Yup!
 
 
 Check uplighter pcb
     * heatsink size/shape/pinout
     * heatsink/led mechanical considerations
     * pcb mechanical considerations
-    ...
-check node pcb
+    * 8-son footprint
+check node pcb:
+    * Not much really
 check pcbs fit together
