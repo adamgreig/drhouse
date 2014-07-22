@@ -19,13 +19,11 @@ Check node schematic:
     * driver design: Good
     * output connector sanity: Uh huh
     * other connector sanity: Yup!
-
-
 Check uplighter pcb
-    * heatsink size/shape/pinout
-    * heatsink/led mechanical considerations
-    * pcb mechanical considerations
-    * 8-son footprint
+    * heatsink size/shape/pinout: Done
+    * heatsink/led mechanical considerations: Fine
+    * pcb mechanical considerations: ??? fine
+    * 8-son footprint: Rejiggled.
 check node pcb:
     * Not much really
-check pcbs fit together
+check pcbs fit together: do at end.
