@@ -1254,4 +1254,30 @@ Wire Wire Line
 Wire Wire Line
 	6050 4250 6050 2225
 Connection ~ 6050 4250
+Text Label 3025 7000 0    60   ~ 0
+B
+Text Label 3025 7150 0    60   ~ 0
+A
+Text Label 8650 1000 0    60   ~ 0
+CH0
+Text Label 8675 1600 0    60   ~ 0
+CH1
+Text Label 8675 2200 0    60   ~ 0
+CH2
+Text Label 8675 2800 0    60   ~ 0
+CH3
+Text Label 8700 3400 0    60   ~ 0
+CH4
+Text Label 8725 4000 0    60   ~ 0
+CH5
+Text Label 8550 4600 0    60   ~ 0
+CH6
+Text Label 8500 5200 0    60   ~ 0
+CH7
+Text Label 5225 1850 0    60   ~ 0
+LED0
+Text Label 5175 1475 0    60   ~ 0
+LED6
+Text Label 5125 1075 0    60   ~ 0
+LED2
 $EndSCHEMATC
