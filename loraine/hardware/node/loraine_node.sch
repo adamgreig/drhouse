@@ -1152,7 +1152,6 @@ NoConn ~ 4800 4850
 NoConn ~ 4800 4950
 NoConn ~ 4800 5050
 NoConn ~ 4800 5150
-NoConn ~ 1400 1250
 $Comp
 L PWR_FLAG #FLG025
 U 1 1 53CCE243
@@ -1280,4 +1279,9 @@ Text Label 5175 1475 0    60   ~ 0
 LED6
 Text Label 5125 1075 0    60   ~ 0
 LED2
+Wire Wire Line
+	1400 1250 1500 1250
+Wire Wire Line
+	1500 1250 1500 1350
+Connection ~ 1500 1350
 $EndSCHEMATC
