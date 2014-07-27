@@ -670,8 +670,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 2175 6100 3650
 Wire Wire Line
-	6050 2225 6050 3750
-Wire Wire Line
 	6050 2225 5175 2225
 Wire Wire Line
 	5175 2225 5175 1475
@@ -1222,10 +1220,7 @@ F 3 "" H 3050 1200 60  0000 C CNN
 	1    3050 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 3750 6250 3750
 Connection ~ 6100 3650
-Connection ~ 6050 3750
 Connection ~ 6000 3850
 Text GLabel 2250 1025 2    60   Input ~ 0
 VIN
@@ -1254,4 +1249,9 @@ F 3 "" H 4750 1325 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4750 1325 4750 1375
+Wire Wire Line
+	4800 3750 6250 3750
+Wire Wire Line
+	6050 4250 6050 2225
+Connection ~ 6050 4250
 $EndSCHEMATC
