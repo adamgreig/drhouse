@@ -2,4 +2,5 @@
   (lib (name 8-son)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/uplighter/8-son.pretty)(options "")(descr ""))
   (lib (name heatsunk_star_led)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/uplighter/heatsunk_star_led.pretty)(options "")(descr ""))
   (lib (name solder_pad)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/uplighter/solder_pad.pretty)(options "")(descr ""))
+  (lib (name hypnospiral)(type KiCad)(uri /home/dwt27/git/drhouse/loraine/hardware/uplighter/hypnospiral.pretty)(options "")(descr ""))
 )
