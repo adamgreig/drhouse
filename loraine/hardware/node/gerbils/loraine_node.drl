@@ -1,5 +1,5 @@
 M48
-;DRILL file {kicad (2014-jul-16 BZR unknown)-product} date Sun 27 Jul 2014 23:01:13 BST
+;DRILL file {kicad (2014-jan-25)-product} date Mon 28 Jul 2014 13:44:06 BST
 ;FORMAT={-:-/ absolute / inch / decimal}
 FMAT,2
 INCH,TZ
@@ -59,6 +59,8 @@ T4
 X4.37Y-5.2739
 X4.37Y-5.4661
 T5
+X4.195Y-5.1
+X4.225Y-4.55
 X4.635Y-5.21
 T6
 X4.07Y-4.05

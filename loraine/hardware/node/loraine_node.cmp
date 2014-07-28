@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Sun 27 Jul 2014 20:21:40 BST
+Cmp-Mod V01 Created by Cvpcb (2014-jan-25)-product   date = Mon 28 Jul 2014 13:23:02 BST
 
 BeginCmp
 TimeStamp = /533878B4;
@@ -124,6 +124,76 @@ TimeStamp = /5338D875;
 Reference = P7;
 ValeurCmp = OUTPUTS;
 IdModule  = Pin_Headers:Pin_Header_Straight_2x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D64AE3;
+Reference = P8;
+ValeurCmp = +5V;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D6514B;
+Reference = P9;
+ValeurCmp = BUS_RX;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65AAD;
+Reference = P10;
+ValeurCmp = CH0;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65B5F;
+Reference = P11;
+ValeurCmp = CH1;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65BDF;
+Reference = P12;
+ValeurCmp = CH2;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65CFB;
+Reference = P13;
+ValeurCmp = CH3;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D66021;
+Reference = P14;
+ValeurCmp = CH7;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65F93;
+Reference = P15;
+ValeurCmp = CH6;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65DE5;
+Reference = P16;
+ValeurCmp = CH4;
+IdModule  = tp:TESTPOINT;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D65F0B;
+Reference = P17;
+ValeurCmp = CH5;
+IdModule  = tp:TESTPOINT;
 EndCmp
 
 BeginCmp
