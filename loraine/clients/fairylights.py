@@ -1,8 +1,11 @@
 import sys
 import time
-import astral
 import loraine
 import datetime
+try:
+    import astral
+except ImportError:
+    astral = None
 
 lights = ["fairylights.back", "fairylights.middle", "fairylights.front"]
 
@@ -25,6 +28,9 @@ def fade_off():
 
 def auto():
     """Call at xx15 and xx45 each hour please."""
+    if not astral:
+        raise RuntimeError("Module 'astral' needed for auto mode.")
+
     city = astral.Astral()['london']
     now_dt = datetime.datetime.now()
     sunrise_tt = city.sun(date=now_dt, local=False)['sunset'].timetuple()
